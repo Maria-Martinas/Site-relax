@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang ="RO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/teste.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ea941c129.js" crossorigin="anonymous"></script>
+    <title>Test gramatică</title>
+    <meta name="description" content="Teste de gramatică">
+    <meta name="keywords" content="teste de gramatică, teste diverse, teste, teste română, forma corectă">
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip">Sari la conținutul principal</a>
+        <a href="../index.html" id="logo">VoieBună</a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <div id="dropdown">
+                       <button onclick="showDropdownCtn()" aria-expanded="false">Teste <i class="fa fa-caret-down" role="img" aria-hidden="true"></i>
+                       <ul id="dropdown-ctn">
+                          <li><a href="test-logica.html">Test logică</a></li>
+                          <li><a href="test-cultura.html">Test cultură generală</a></li>
+                          <li><a href="test-inteligenta.html">Test inteligență</a></li>
+                          <li style="background-color:rgb(72, 122, 72);"><a href="test-gramatica.html" style="color:white">Test gramatică</a></li>
+                       </ul>
+                    
+                </li>
+                <li><a href="../bancuri/bancuri.html">Bancuri</a></li>
+                <li><a href="../carti/carti.html">Cărți</a></li>
+                <li><a href="../citate/citate.html">Citate</a></li>
+                <li><a href="../curiozitati/curiozitati.html">Curiozități</a></li>
+                <li><a href="../evenimente/evenimente.html">Evenimente</a></li>
+                <li><a href="../ghicitori/ghicitori.html">Ghicitori</a></li>
+                <li><a href="../intamplari/intamplari.html"> Întâmplări</a></li>
+                <li><a href="../jocuri/jocuri.html">Jocuri</a></li>
+                <li><a href="../perle/perle.html">Perle</a></li>
+                <li><a href="../sfaturi/sfaturi.html">Sfaturi</a></li>
+            </ul>
+        </nav> 
+        <button id="nav-hide" type="button" onclick="showNavbar()">&#9776;</button>
+    </header>
+    <main id="main">   
+        <h1>TEST GRAMATICĂ</h1>
+        <h2>Întrebarea numărul 1 din 10.</h2>
+        <div id="firstElm">
+            <p>1) Mama sa/s-a este frumoasă.</p>
+            <button type="button" data-answear="correct" class="quizz">a) sa</button>
+            <button type="button" data-answear="false" class="quizz">b) s-a</button></div>
+        <div>
+            <p>2) Părinții iau/i-au cumpărat jucării.</p>
+            <button type="button" data-answear="false" class="quizz">a) iau</button>
+            <button type="button" data-answear="correct" class="quizz">b) i-au</button>
+        </div>
+        <div>
+            <p>3) L-am/lam auzit pe Cristi plângând.</p>
+            <button type="button" data-answear="false" class="quizz">a) lam</button>
+            <button type="button" data-answear="correct" class="quizz">b) l-am</button>
+         </div>
+        <div>
+            <p>4) Care este subiectul din propoziția: "Copilul a plecat în drumeție și a uitat să își ia pachetul cu mâncare." ?</p>
+            <button type="button" data-answear="correct" class="quizz">a) copilul</button>
+            <button type="button" data-answear="false" class="quizz">b) pachetul cu mâncare</button>
+        </div>
+        <div>
+            <p>5) Câte greșeli sunt în propoziția: "Spunemi de ce lai mușcat pe băiatul care ția dat ciocolată!"?</p>
+            <button type="button" data-answear="false" class="quizz">a) 2</button>
+            <button type="button" data-answear="correct" class="quizz">b) 3</button>
+        </div>
+        <div>
+            <p>6) Propoziția: "Dute să scri!"</p>
+            <button type="button" data-answear="false" class="quizz">a) este corectă</button>
+            <button type="button" data-answear="false" class="quizz">b) este incorectă, are o greșeală</button>
+            <button type="button" data-answear="correct" class="quizz">c) este incorectă, are 2 greșeli</button>
+        </div>
+        <div>
+            <p>7) "El" este:</p>
+            <button type="button" data-answear="correct" class="quizz">a) pronume</button>
+            <button type="button" data-answear="false" class="quizz">b) prenume</button>
+            <button type="button" data-answear="false" class="quizz">c) adverb</button>
+        </div>
+        <div>
+            <p>8) În care din enunțurile următoare apar greșeli gramaticale?</p>
+            <button type="button" data-answear="correct" class="quizz">a) Mama s-a este frumoasă.</button>
+            <button type="button" data-answear="false" class="quizz">b) Învață să scrii corect!</button>
+            <button type="button" data-answear="false" class="quizz">c) Mi-a venit coletul.</button>
+        </div>
+        <div>
+            <p>9) Desparte corect în silabe cuvântul manuscris!</p>
+            <button type="button" data-answear="correct" class="quizz">a) ma-nu-scris</button>
+            <button type="button" data-answear="false" class="quizz">b) man-us-cris</button>
+            <button type="button" data-answear="false" class="quizz">c) manus-cris</button>
+        </div>
+        <div class="last">
+            <p>10) Alege varianta corectă:</p>
+            <button type="button" data-answear="false" class="quizz">a) Trebuie să fi punctual!</button>
+            <button type="button" data-answear="correct" class="quizz">b) Trebuie să fii punctual!</button>
+        </div>
+        <div id="finalText">
+            <p>Mulțumim pentru interesul acordat!</p>
+            <p>Răspunsurile corecte sunt:</p>
+            <ol>
+                <li>sa</li>
+                <li>i-au</li>
+                <li>l-am</li>
+                <li>copilul</li>
+                <li>3</li>
+                <li>este incorectă, are 2 greșeli</li>
+                <li>pronume</li>
+                <li>Mama s-a este frumoasă.</li>
+                <li>ma-nu-scris</li>
+                <li>Trebuie să fii punctual!</li>
+            </ol>
+            <button type="button" onclick="location.reload()">Reîncearcă</button>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <a href="mailto:martinasmaria@hotmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
+        </section>
+    </footer>
+    <script src="../js/teste.js"></script>
+</body>
+</html>

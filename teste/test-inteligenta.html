@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang ="RO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/teste.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ea941c129.js" crossorigin="anonymous"></script>
+    <title>Test inteligență</title>
+    <meta name="description" content="Teste de inteligență">
+    <meta name="keywords" content="Teste de inteligență, teste, teste diverse, inteligență, geniu">
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip">Sari la conținutul principal</a>
+        <a href="../index.html" id="logo">VoieBună</a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <div id="dropdown">
+                       <button onclick="showDropdownCtn()" aria-expanded="false">Teste <i class="fa fa-caret-down" role="img" aria-hidden="true"></i>
+                       <ul id="dropdown-ctn">
+                          <li><a href="test-logica.html">Test logică</a></li>
+                          <li><a href="test-cultura.html">Test cultură generală</a></li>
+                          <li style="background-color:rgb(72, 122, 72);"><a href="test-inteligenta.html" style="color:white">Test inteligență</a></li>
+                          <li><a href="test-gramatica.html">Test gramatică</a></li>
+                       </ul>
+                    
+                </li>
+                <li><a href="../bancuri/bancuri.html">Bancuri</a></li>
+                <li><a href="../carti/carti.html">Cărți</a></li>
+                <li><a href="../citate/citate.html">Citate</a></li>
+                <li><a href="../curiozitati/curiozitati.html">Curiozități</a></li>
+                <li><a href="../evenimente/evenimente.html">Evenimente</a></li>
+                <li><a href="../ghicitori/ghicitori.html">Ghicitori</a></li>
+                <li><a href="../intamplari/intamplari.html"> Întâmplări</a></li>
+                <li><a href="../jocuri/jocuri.html">Jocuri</a></li>
+                <li><a href="../perle/perle.html">Perle</a></li>
+                <li><a href="../sfaturi/sfaturi.html">Sfaturi</a></li>
+            </ul>
+        </nav> 
+        <button id="nav-hide" type="button" onclick="showNavbar()">&#9776;</button>
+    </header>
+    <main id="main">
+        <h1>TEST  INTELIGENȚĂ</h1>
+        <h2>Întrebarea numărul 1 din 10.</h2>
+        <div id="firstElm">
+            <p>1) Alege numărul care completează șirul 3, 6, 12, 24,...!</p>
+            <button type="button" data-answear="correct" class="quizz" aria-label="patruzeci și opt">a) 48</button>
+            <button type="button" data-answear="false" class="quizz" aria-label="douăzeci și șapte">b) 27</button>
+            <button type="button" data-answear="false" class="quizz" aria-label="treizeci și trei">c) 33</button>
+            <button type="button" data-answear="false" class="quizz" aria-label="șaizeci și șase">d) 66</button>
+        </div>
+        <div>
+            <p>2) Un băiat stă pe malul drept al unui râu. Pe celălalt mal se află cățelul copilului.
+               Atunci când băiatul cheamă câinele la el, acesta ajunge foarte repede fară să se ude
+               și fără să traverseze vreun pod. Cum a reușit?</p>
+            <button type="button" data-answear="false" class="quizz">a) s-a teleportat</button>
+            <button type="button" data-answear="false" class="quizz">b) a zburat</button>
+            <button type="button" data-answear="correct" class="quizz">c) apa era înghețată</button>
+            <button type="button" data-answear="false" class="quizz">d) a făcut o vrajă</button>
+        </div>
+        <div>
+            <p>3) Ce este mai greu? Un kilogram de fier sau un kilogram de pene?</p>
+            <button type="button" data-answear="correct" class="quizz">a) sunt la fel de grele</button>
+            <button type="button" data-answear="false" class="quizz">b) fierul</button>
+            <button type="button" data-answear="false" class="quizz">c) penele</button>
+            <button type="button" data-answear="false" class="quizz">d) sunt incomparabile</button>
+        </div>
+        <div>
+            <p>4) Ce culoare rezultă din combinarea culorilor galben și albastru?</p>
+            <button type="button" data-answear="false" class="quizz">a) mov</button>
+            <button type="button" data-answear="correct" class="quizz">b) verde</button>
+            <button type="button" data-answear="false" class="quizz">c) roșu</button>
+            <button type="button" data-answear="false" class="quizz">d) porocaliu</button>
+        </div>
+        <div>
+            <p>5) Un caiet și un creion costă împreună 1.10 lei. Caietul costă cu 1 leu mai mult decât creionul.
+               Cât costă creionul?</p>
+            <button type="button" data-answear="false" class="quizz" aria-label="zece bani">a) 0.1 leu</button>
+            <button type="button" data-answear="correct" class="quizz" aria-label="cincizeci de bani">b) 0.5 lei</button>
+            <button type="button" data-answear="false" class="quizz" aria-label="un leu">c) 1 leu</button>
+            <button type="button" data-answear="false" class="quizz" aria-label=" doi lei">d) 2 lei</button>
+        </div>
+        <div>
+            <p>6) Câte picioare au împreună 2 cai, 2 oi, 4 gaini și 10 pisici?</p>
+            <button type="button" data-answear="false" class="quizz" aria-label="douăzeci">a) 20</button>
+            <button type="button" data-answear="false" class="quizz">b) multe</button>
+            <button type="button" data-answear="false" class="quizz" aria-label="paisprezece">c) 14</button>
+            <button type="button" data-answear="correct" class="quizz" aria-label="șaizeci și patru">d) 64</button>
+        </div>
+        <div>
+            <p>7) Care dintre cuvintele de mai jos este mai apropiat ca sens de cuvântul "a șterge"?</p>
+            <button type="button" data-answear="false" class="quizz">a) a permite</button>
+            <button type="button" data-answear="correct" class="quizz">b) a elimina</button>
+            <button type="button" data-answear="false" class="quizz">c) urât</button>
+            <button type="button" data-answear="false" class="quizz">d) a tolera</button>
+        </div>
+        <div>
+            <p>8) ABCD este pentru DCBA așa cum MNOP este pentru:</p>
+            <button type="button" data-answear="false" class="quizz">a) MNOP</button>
+            <button type="button" data-answear="false" class="quizz">b) OPMN</button>
+            <button type="button" data-answear="false" class="quizz">c) NOPM</button>
+            <button type="button" data-answear="correct" class="quizz">d) PONM</button>
+        </div>
+        <div>
+            <p>9) "Întotdeana" este pentru "niciodată" așa cum "frumos" este pentru:</p>
+            <button type="button" data-answear="correct" class="quizz">a) urât</button>
+            <button type="button" data-answear="false" class="quizz">b) prea mult</button>
+            <button type="button" data-answear="false" class="quizz">c) puțin</button>
+            <button type="button" data-answear="false" class="quizz">d) deloc</button>
+        </div>
+        <div class="last">
+            <p>10) Alegeți cuvântul care  nu corespunde seriei:</p>
+            <button type="button" data-answear="false" class="quizz">a) creangă</button>
+            <button type="button" data-answear="false" class="quizz">b) ramură</button>
+            <button type="button" data-answear="false" class="quizz">c) cracă</button>
+            <button type="button" data-answear="correct" class="quizz">d) floare</button>
+        </div>
+        <div id="finalText">
+            <p>Mulțumim pentru interesul acordat!</p>
+            <p>Răspunsurile corecte sunt:</p>
+            <ol>
+                <li>48</li>
+                <li>apa era înghețată</li>
+                <li>sunt la fel de grele</li>
+                <li>verde</li>
+                <li>0.5 lei</li>
+                <li>64</li>
+                <li>a elimina</li>
+                <li>PONM</li>
+                <li>urât</li>
+                <li>floare</li>
+            </ol>
+            <button type="button" onclick="location.reload()">Reîncearcă</button>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <a href="mailto:martinasmaria@hotmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
+        </section>
+    </footer>
+    <script src="../js/teste.js"></script>
+</body>
+</html>

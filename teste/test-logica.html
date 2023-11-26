@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang ="RO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/teste.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ea941c129.js" crossorigin="anonymous"></script>
+    <title>Test logică</title>
+    <meta name="description" content="Teste de logică">
+    <meta name="keywords" content="Teste de logică, teste, teste diverse, logică, gândire">
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip">Sari la conținutul principal</a>
+        <a href="../index.html" id="logo">VoieBună</a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <div id="dropdown">
+                       <button onclick="showDropdownCtn()" aria-expanded="false">Teste <i class="fa fa-caret-down" role="img" aria-hidden="true"></i>
+                       <ul id="dropdown-ctn">
+                          <li style="background-color:rgb(72, 122, 72);"><a href="test-logica.html" style="color:white">Test logică</a></li>
+                          <li><a href="test-cultura.html">Test cultură generală</a></li>
+                          <li><a href="test-inteligenta.html">Test inteligență</a></li>
+                          <li><a href="test-gramatica.html">Test gramatică</a></li>
+                       </ul>
+                    
+                </li>
+                <li><a href="../bancuri/bancuri.html">Bancuri</a></li>
+                <li><a href="../carti/carti.html">Cărți</a></li>
+                <li><a href="../citate/citate.html">Citate</a></li>
+                <li><a href="../curiozitati/curiozitati.html">Curiozități</a></li>
+                <li><a href="../evenimente/evenimente.html">Evenimente</a></li>
+                <li><a href="../ghicitori/ghicitori.html">Ghicitori</a></li>
+                <li><a href="../intamplari/intamplari.html"> Întâmplări</a></li>
+                <li><a href="../jocuri/jocuri.html">Jocuri</a></li>
+                <li><a href="../perle/perle.html">Perle</a></li>
+                <li><a href="../sfaturi/sfaturi.html">Sfaturi</a></li>
+            </ul>
+        </nav> 
+        <button id="nav-hide" type="button" onclick="showNavbar()">&#9776;</button>
+    </header>
+    <main id="main">
+        <h1>TEST LOGICĂ</h1>
+        <h2>Întrebarea numărul 1 din 10.</h2>
+        <div id="firstElm">
+             <p>1) Elena și George au împreună 4 fete. Fiecare fată are câte un frate. Câți copii au în total Elena și George?</p>
+             <button type="button" data-answear="false" class="quizz" aria-label="opt">a) 8</button>
+             <button type="button" data-answear="correct" class="quizz" aria-label="cinci">b) 5</button>
+             <button type="button" data-answear="false" class="quizz" aria-label="zece">c) 10</button>
+        </div>
+        <div>
+            <p>2) Doctorul îți dă 3 pastile și îți zice să iei una la fiecare jumătate de oră. În cât timp se vor termina pastilele?</p>
+            <button type="button" data-answear="false" class="quizz">a) o oră jumătate</button>
+            <button type="button" data-answear="false" class="quizz">b) doua ore</button>
+            <button type="button" data-answear="correct" class="quizz">c) o oră</button>
+        </div>
+        <div>
+            <p>3) În ce lună se doarme cel mai puțin?</p>
+            <button type="button" data-answear="false" class="quizz">a) decembrie</button>
+            <button type="button" data-answear="correct" class="quizz">b) februarie</button>
+            <button type="button" data-answear="false" class="quizz">c) iulie</button>
+        </div>
+        <div>
+            <p>4) Înainte ca muntele Everest să fie descoperit, care era cel mai înalt munte din lume?</p>
+            <button type="button" data-answear="correct" class="quizz">a) muntele Everest</button>
+            <button type="button" data-answear="false" class="quizz">b) muntele Kilimanjaro</button>
+            <button type="button" data-answear="false" class="quizz">c) muntele Fuji</button>
+        </div>
+        <div>
+            <p>5) Mama Mariei are 3 copii. Primul copil se numește Mai iar al doilea se numește Aprilie. Cum se numește cel de-al treilea copil?</p>
+            <button type="button" data-answear="false" class="quizz">a) Iunie</button>
+            <button type="button" data-answear="false" class="quizz">b) Iulie</button>
+            <button type="button" data-answear="correct" class="quizz">c) Maria</button>
+        </div>
+        <div>
+            <p>6) Unele luni au 28 de zile, altele 30 și altele 31 de zile. Câte luni au 28 de zile?</p>
+            <button type="button" data-answear="correct" class="quizz">a) toate</button>
+            <button type="button" data-answear="false" class="quizz">b) niciuna</button>
+            <button type="button" data-answear="false" class="quizz">c) una singura</button>
+        </div>
+        <div>
+            <p>7) Câte șosete se află într-o duzină?</p>
+            <button type="button" data-answear="false" class="quizz" aria-label="doisprezece">a) 12</button>
+            <button type="button" data-answear="correct" class="quizz" aria-label="douăzeci și patru">b) 24</button>
+            <button type="button" data-answear="false" class="quizz" aria-label="șase">c) 6</button>
+        </div>
+        <div>
+            <p>8) Cristian are 4 ani, iar Alin este de 3 ori mai mare decât el. Ce vârstă va avea Alin când Cristian va împlini 12 ani?</p>
+            <button type="button" data-answear="correct" class="quizz" aria-label="douăzeci">a) 20</button>
+            <button type="button" data-answear="false" class="quizz" aria-label="doisprezece">b) 12</button>
+            <button type="button" data-answear="false" class="quizz" aria-label="douăzeci și patru">c) 24</button>
+        </div>
+        <div>
+            <p>9) Dacă vântul bate dinspre nord și plouă torențial, în ce direcție cade roșia din pom?</p>
+            <button type="button" data-answear="false" class="quizz">a) est</button>
+            <button type="button" data-answear="false" class="quizz">b) vest</button>
+            <button type="button" data-answear="correct" class="quizz">c) roșia nu crește în pom</button>
+        </div>
+        <div class="last">
+            <p>10) De câte ori îl poți scădea pe 10 din 100?</p>
+            <button type="button" data-answear="false" class="quizz">a) de 10 ori</button>
+            <button type="button" data-answear="false" class="quizz">b) de 5 ori</button>
+            <button type="button" data-answear="correct" class="quizz">c) o dată</button>
+        </div>
+        <div id="finalText">
+            <p>Mulțumim pentru interesul acordat!</p>
+            <p>Răspunsurile corecte sunt:</p>
+            <ol>
+                <li>5</li>
+                <li>o oră</li>
+                <li>februarie(luna cea mai scurtă)</li>
+                <li>Muntele Everest(chiar dacă nu ar fi fost descoperit, tot el ar fi fost cel mai înalt)</li>
+                <li>Maria</li>
+                <li>toate</li>
+                <li>24</li>
+                <li>20</li>
+                <li>Roșia  nu crește în pom, nu-i așa?</li>
+                <li>o dată (a doua oară nu s-ar mai scădea din 100)</li>
+            </ol>
+            <button type="button" onclick="location.reload()">Reîncearcă</button>
+        </div>
+    </main>
+    <footer>
+        <section>
+                <a href="mailto:martinasmaria@hotmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
+        </section>
+    </footer>
+ <script src="../js/teste.js"></script>
+</body>    
+</html>

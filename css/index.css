@@ -1,0 +1,242 @@
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --bgColorG:#6b8e23;
+    --bgColorB:rgb(173, 216, 230);
+    --color:rgb(255, 255, 255);
+}
+body,html {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom right, var(--color),var(--bgColorB),var(--color));
+    padding-top: 5rem;
+    border-bottom: 2px solid var(--bgColorG);
+    border-radius: 10px;
+    position: sticky;
+    top:0;
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+ #logo {
+    text-decoration: none;
+    color:var(--bgColorB);
+    font-family: "Brush Script MT", cursive;
+    font-size: 5vw;
+    position: absolute;
+    left:2rem;
+    top:1rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px black,-1px -1px 3px black;
+ }
+ .navbar  {
+    display: none;
+}
+.navbar ul { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul li a {
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    margin:.5em;
+    
+}
+ li {
+    transition: all 1s;
+}
+
+#dropdown-ctn {
+    display:none;
+    position: absolute;
+    top:3em;
+    box-shadow: 3px 3px 5px var(--bgColorG),-3px -3px 5px var(--bgColorG);  
+    background-color: rgb(188, 197, 168);
+    text-align: left;
+}
+
+#dropdown button {
+    border: none;
+    color: black;
+    font-size :inherit;
+    background-color: inherit;
+    padding-top: 1em;
+    margin: 0;
+}
+
+li:hover {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--bgColorG);
+}
+
+header #nav-hide {
+    border: none;
+    background-color: inherit;
+    color: black;
+    font-size: 2em;
+    background-color: inherit;
+    display:block;
+    position: absolute;
+    top:0.8em;
+    right: 0;
+}
+header #nav-hide:hover {
+    cursor: pointer;
+    color:var(--bgColorG);
+}
+nav.responsive {
+    display: block;
+   }
+  
+main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    padding: .3rem;
+    background-color: rgba(0,0,0,0.2);
+}
+aside {
+    padding: 2em;
+}
+aside div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+select {
+    width:10em;
+    margin-top: 1em;
+}
+.art {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 60%;
+    box-shadow: 1px 1px 5px var(--bgColorG);
+    margin:1em;
+    padding: .5em;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.art button {
+    background-color: inherit;
+    color:var(--bgColorB);
+    font-size: inherit;
+    font-weight: bolder;
+    border: none;
+    cursor:pointer;
+    padding:0;
+}
+
+.right {
+   align-self: flex-end;
+   white-space:pre-line;
+}
+.right + .left img {
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+.detail {
+    display: none;
+}
+.detail:nth-child(2) {
+    color:var(--bgColorB);
+    font-weight: 600;
+}
+
+ h2 {
+    padding-left: 3px;
+    color: #000;
+    background-color: rgb(193, 189, 189);
+    border-left:3px solid var(--bgColorB);
+}
+
+main #h-top {
+    background-color: whitesmoke;
+    border: none;
+    text-align: center;
+    font-family:"Brush Script MT", cursive;
+    color: white;
+    font-size: 6vw;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+footer {
+    width:50%;
+    margin: auto;
+    display: flex;
+    border-top: 4px solid;
+    height:30%;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    color:black;
+    text-decoration: none;
+}
+footer a:hover {
+    font-size: larger;
+    font-weight: 900;
+}
+
+@media screen and (min-width:1020px) {
+    .navbar  {
+       display: block;
+   }
+   header #nav-hide {
+       display: none;
+   }  
+   main {
+    width:75%;
+   }
+   main #h-top {
+    font-size: 5vw;
+   }
+  
+   aside {
+    padding: 8em 0 0 1em;
+    height: 100%; 
+    width: 25%;
+    position: fixed;
+    right: 0;
+    top:0;
+  }
+  
+   select {
+      width: 50%;
+      margin-top: 1em;
+ }
+ 
+}
+
+
+
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang ="RO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ea941c129.js" crossorigin="anonymous"></script>
+    <title>VoieBuna</title>
+    <meta name="description" content="Site de divertisment unde poți găsi diferite teste, bancuri, cărți, jocuri, sfaturi și multe altele">
+    <meta name="keywords" content="bancuri, teste, cărți, citate, curiozități, evenimente istorice, ghicitori, întâmplări reale, jocuri,perle, sfaturi">
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip">Sari la conținutul principal</a>
+        <a href="index.html" id="logo">VoieBună</a>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <div id="dropdown">
+                        <button onclick="showDropdownCtn()" aria-expanded="false">Teste <i class="fa fa-caret-down" role="img" aria-hidden="true"></i></button>
+                        <ul id="dropdown-ctn">
+                        <li><a href="teste/test-logica.html">Test logică</a></li>
+                        <li><a href="teste/test-cultura.html">Test cultură generală</a></li>
+                        <li><a href="teste/test-inteligenta.html">Test inteligență</a></li>
+                        <li><a href="teste/test-gramatica.html">Test gramatică</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="bancuri/bancuri.html">Bancuri</a></li>
+                <li><a href="carti/carti.html">Cărți</a></li>
+                <li><a href="citate/citate.html">Citate</a></li>
+                <li><a href="curiozitati/curiozitati.html">Curiozități</a></li>
+                <li><a href="evenimente/evenimente.html">Evenimente</a></li>
+                <li><a href="ghicitori/ghicitori.html">Ghicitori</a></li>
+                <li><a href="intamplari/intamplari.html"> Întâmplări</a></li>
+                <li><a href="jocuri/jocuri.html">Jocuri</a></li>
+                <li><a href="perle/perle.html">Perle</a></li>
+                <li><a href="sfaturi/sfaturi.html">Sfaturi</a></li>   
+            </ul>
+        </nav>
+        <button id="nav-hide" type="button" onclick="showNavbar()">&#9776;</button>
+    </header>
+    <main id="main">
+        <h1 id="h-top">Dispoziție și voie bună pe placul tuturor!</h1>
+        <article class="art left">
+            <h2>Știați că...</h2>
+            <p>În Bangladesh există o lege care permite autorităţilor să aresteze elevii 
+               cu vârste mai mari de 15 ani care copiază la examene? </p> 
+        </article>
+
+        <article class="art right">
+            <h2>Să râdem un pic!</h2>
+            <p>O gâscă într-un bar: 
+               - Aveți mămăligă? Întreabă gâsca. 
+               - Nu, răspunde barmanul.
+               - Sigur?
+               - Nu, nu avem, n-auzi? 
+               - Sigur, sigur ?
+               - Dacă mai întrebi o dată, iau un cui și un ciocan și-ți prind ciocul de tejghea. 
+               - Aveți cuie? 
+               - Nu!
+               - Dar mămăligă? </p>
+        </article>
+
+        <article class="art left">
+            <h2>Să ne destindem!</h2>
+            <h3><cite>Prin ochii ei</cite></h3>
+            <h4>Autor: Sarah Pinborough</h4>
+            <p><img src="images/prin-ochii-ei.jpeg" width="100" height="120" alt="">
+                Louise este o mamă singură, secretară, prinsă în rutina de zi cu zi.<br>
+                Într-una din  serile ei în oraș, întâlnește un bărbat într-un bar și imediat ies scântei. 
+                Deși pleacă după ce se sărută, e încântată că în cele din urmă a creat o legătură cu cineva. 
+                Când ajunge la serviciu luni, Louise<span id="disp-none">...</span><button  onclick="showDetails(event)">citește mai multe</button><span class="detail"> îl întâlnește pe noul ei șef, David, bărbatul de la bar. 
+                Bărbatul căsătorit de la bar, care îi spune că sărutul a fost o greșeală teribilă, dar  încă nu-și poate lua ochii de la ea.
+                Apoi Louise se ciocnește de Adele, care este nouă în oraș și are nevoie de o prietenă. 
+                Dar se întamplă că tocmai ea să fie căsătorită cu David. <br> <cite>Prin ochii ei</cite> este o poveste inedită și care, probabil, 
+                nu seamănă cu nici o altă carte pe care ați citit&#8209;o până acum.  </span></p>
+        </article>
+
+        <article class="art right">
+            <h2>Pălărie într-un picior, ghici ciupercă ce-i!</h2>
+            <p>Vin oaspeții la tine, iar în frigider ai o sticlă de vin, o sticlă cu suc  și o sticlă cu apă minerală. 
+               Ce vei deschide mai întâi?<button  onclick="showAnswear(event)"> vezi răspunsul...</button> <span class="detail">Frigiderul</span> </p>
+        </article>
+    </main>
+
+    <aside>
+        <div>
+            <p>Informații utile despre țările lumii</p>
+            <img src="" alt="" width="150" height="100" />
+            <select id="countries"></select>
+        </div>
+        <p>Țara: <span id="country" lang="en"></span></p>
+        <p>Capitala: <span id="capital" lang="en"></span></p>
+        <p>Limba oficială: <span id="language" lang="en"></span></p>
+        <p>Prefix: <span id="code"></span></p>
+        <p>Populația: <span id="population"></span></p>
+        <p>Regiunea: <span id="region" lang="en"></span></p>
+        <p>Sub-regiunea: <span id="subregion" lang="en"></span></p>
+        <p>Moneda: <span id="map" lang="en"></span></p>
+    </aside>
+    
+    <footer>
+        <section>
+            <a href="mailto:martinasmaria@hotmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
+        </section>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

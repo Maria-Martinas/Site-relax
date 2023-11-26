@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --bgColorG:#6b8e23;
+    --bgColorB:rgb(173, 216, 230);
+    --color:rgb(255, 255, 255);
+}
+body, html  {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+header {
+    background-image: linear-gradient(to bottom right, var(--color),var(--bgColorB),var(--color));
+    padding-top: 5rem;
+    border-bottom: 2px solid var(--bgColorG);
+    border-radius: 10px;
+    position: sticky;
+    top:0;
+   
+}
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+ #logo {
+    text-decoration: none;
+    color:var(--bgColorB);
+    font-family: "Brush Script MT", cursive;
+    font-size: 3.5rem;
+    position: absolute;
+    left:2rem;
+    top:1rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px black,-1px -1px 3px black;
+ }
+.navbar  ul { 
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content:center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+ul li a {
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    margin:.5em;
+}
+li {
+    transition: all 0.5s;
+}
+#dropdown-ctn {
+    display:none;
+    position: absolute;
+    top:3em;
+    box-shadow: 3px 3px 5px var(--bgColorG),-3px -3px 5px var(--bgColorG);  
+    background-color: rgb(188, 197, 168);
+    text-align: left;
+}
+
+#dropdown button {
+    border: none;
+    color: black;
+    font-size :inherit;
+    background-color: inherit;
+    padding-top: 1em;
+    margin: 0;
+}
+
+li:hover {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--bgColorG);
+}
+
+
+header #nav-hide {
+    border: none;
+    background-color: inherit;
+    color: black;
+    font-size: 2em;
+    background-color: inherit;
+    display:none;
+    position: absolute;
+    top:0.8em;
+    right: 0;
+}
+header #nav-hide:hover {
+    cursor: pointer;
+    color:var(--bgColorG);
+}
+nav.responsive {
+    display: block;
+   }
+
+main h1 {color: white; text-shadow: 1px 1px  3px black, -1px -1px  3px black;
+    padding :.3em;
+    margin: 0;
+    text-align: center;
+    font-family:"Brush Script MT", cursive;
+    font-size: 5em;
+    background-color: whitesmoke;
+}
+main p {
+    white-space: pre-line;
+    margin:1em 2em 1em 8em;
+    padding: 1em;
+    border-left:2px solid var(--bgColorG);
+    border-radius: 2.5em .5em .5em 1em;
+    background-color:rgb(193, 219, 228);
+    max-width: max-content;
+}
+#toTop  {
+    background-color:inherit;
+    border: none;
+    border-left: 2px solid var(--bgColorG);
+    font-size: 1em;
+    border-radius: 40%;
+    position: fixed;
+    right: 0;
+    top:18em;
+    padding: 4px;
+    display: none;
+    cursor: pointer;
+    color:black;
+}
+footer {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    border-top: 4px solid;
+    height:30%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color:black;
+    text-decoration: none;
+}
+footer a:hover {
+    font-size: larger;
+    font-weight: 900;
+}
+
+@media screen and (max-width:600px) {
+    .navbar {
+       display: none;
+   }
+   header #nav-hide {
+       display: block;
+   }  
+   main h1 {
+    font-size: 3em;
+   }
+   main p {
+    margin:1em 2em 1em 2em;
+   }
+}
